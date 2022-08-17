@@ -8,6 +8,14 @@ jobs:
               run: |
                 pwd
                 ls -a
+            
+            - name: Environment variables
+               run: |
+                echo $GITHUB_SHA
+                echo $GITHUB_REPOSITORY
+                echo $GITHUB_WORKSPACE
+                env
+                echo "${{ github.token }}"
                 
             - name: Checkout
               uses: actions/checkout@v3
