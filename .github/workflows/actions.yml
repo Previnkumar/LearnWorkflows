@@ -10,7 +10,7 @@ jobs:
                 ls -a
             
             - name: Environment variables
-               run: |
+              run: |
                 echo $GITHUB_SHA
                 echo $GITHUB_REPOSITORY
                 echo $GITHUB_WORKSPACE
